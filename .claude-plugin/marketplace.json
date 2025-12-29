@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "description": "MoonBit development guide for AI agents",
   "owner": {
-    "name": "fu2hito",
-    "url": "https://github.com/fu2hito"
+    "name": "f4ah6o",
+    "url": "https://github.com/f4ah6o"
   },
   "plugins": [
     {
@@ -14,8 +14,8 @@
       "source": "./",
       "category": "development",
       "author": {
-        "name": "fu2hito",
-        "url": "https://github.com/fu2hito"
+        "name": "f4ah6o",
+        "url": "https://github.com/f4ah6o/moonbit-agent-guide"
       },
       "keywords": [
         "moonbit",
