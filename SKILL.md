@@ -172,6 +172,58 @@ pub fn sum_array(xs : Array[Int]) -> Int {
 The MoonBit code in docstring will be type checked and tested automatically.
 (using `moon test --update`). In docstrings, `mbt check` should only contain `test` or `async test`.
 
+### Property-Based Testing with QuickCheck
+
+For testing properties that should hold across a wide range of inputs, use `moonbitlang/quickcheck` for property-based testing.
+
+**Installation**:
+```sh
+moon add moonbitlang/quickcheck
+```
+
+QuickCheck generates random test inputs and verifies that your properties hold true. It's especially useful for:
+- Testing invariants (e.g., `reverse(reverse(xs)) == xs`)
+- Finding edge cases you might not think of
+- Verifying algebraic properties (associativity, commutativity, etc.)
+
+**Basic usage**:
+```mbt check
+///|
+test "list reverse is involutive" {
+  @quickcheck.check(fn(xs : List[Int]) => {
+    xs.reverse().reverse() == xs
+  })
+}
+
+test "addition is commutative" {
+  @quickcheck.check(fn(x : Int, y : Int) => {
+    x + y == y + x
+  })
+}
+```
+
+**Custom types with `Arbitrary`**:
+For your own types, derive the `Arbitrary` trait to enable random generation:
+```mbt check
+///|
+enum Nat {
+  Zero
+  Succ(Nat)
+} derive(Arbitrary, Show)
+
+test "nat addition properties" {
+  @quickcheck.check(fn(x : Nat, y : Nat) => {
+    // Example: test some property about Nat
+    true
+  })
+}
+```
+
+**When to use QuickCheck vs snapshot tests**:
+- **Snapshot tests**: When you need to verify exact output for specific inputs
+- **QuickCheck**: When you want to verify properties/invariants across many random inputs
+- **Unit tests**: When testing specific edge cases or complex behavior
+
 ## Spec-driven Development
 
 - The spec can be written in a readonly `spec.mbt` file (name is conventional, not mandatory) with stub code marked as declarations:

@@ -22,7 +22,9 @@
         "moonbitlang",
         "development",
         "testing",
-        "refactoring"
+        "refactoring",
+        "quickcheck",
+        "property-based-testing"
       ],
       "strict": false
     }
