@@ -1,0 +1,30 @@
+{
+  "name": "moonbit-agent-guide",
+  "version": "0.1.0",
+  "description": "MoonBit development guide for AI agents",
+  "owner": {
+    "name": "fu2hito",
+    "url": "https://github.com/fu2hito"
+  },
+  "plugins": [
+    {
+      "name": "moonbit-agent-guide",
+      "description": "Guide for writing, refactoring, and testing MoonBit projects",
+      "version": "0.1.0",
+      "source": "./",
+      "category": "development",
+      "author": {
+        "name": "fu2hito",
+        "url": "https://github.com/fu2hito"
+      },
+      "keywords": [
+        "moonbit",
+        "moonbitlang",
+        "development",
+        "testing",
+        "refactoring"
+      ],
+      "strict": false
+    }
+  ]
+}
