@@ -6,10 +6,11 @@ over MoonBit projects.
 
 ## How to use
 
-The simplest way is to reference the file and ask the AI to read it in the prompt.
+### Claude Code
 
-Here we provide some extra instructions on how to use the MoonBit System Prompt in
-different code agents.
+```
+/plugin marketplace add f4ah6o/moonbit-agent-guide
+```
 
 ### AGENTS.md
 
