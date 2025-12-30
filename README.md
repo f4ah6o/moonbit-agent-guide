@@ -12,6 +12,12 @@ over MoonBit projects.
 /plugin marketplace add f4ah6o/moonbit-agent-guide
 ```
 
+re-install
+```
+/plugin marketplace remove f4ah6o/moonbit-agent-guide
+/plugin marketplace add f4ah6o/moonbit-agent-guide
+```
+
 ### AGENTS.md
 
 Many AI code agents now have adopted the [`AGENTS.md`](https://agents.md)
