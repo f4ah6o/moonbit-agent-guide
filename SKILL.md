@@ -105,8 +105,10 @@ my_module
 
 - `moon new my_project` - Create new project
 - `moon run cmd/main` - Run main package
+- `moon run cmd/main --target wasm-gc|js|native` - Run with specific backend
 - `moon build` - Build project
 - `moon check` - Type check without building, use it REGULARLY, it is fast
+- `moon check --deny-warn` - Strict check for CI (fails on warnings)
 - `moon info` - Type check and generate `mbti` files
   run it to see if any public interfaces changed.
 - `moon check --target all` - Type check for all backends
@@ -122,6 +124,9 @@ my_module
 - `moon test [dirname|filename]` - Test specific directory or file
 - `moon coverage analyze` - Analyze coverage
 
+### Benchmark Commands
+
+- `moon bench` - Run benchmarks (outputs avg time, std dev, iterations)
 
 ## `README.mbt.md` Generation Guide
 
