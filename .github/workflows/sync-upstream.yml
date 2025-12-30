@@ -60,5 +60,4 @@ jobs:
             --base main \
             --head "$PR_BRANCH" \
             --title "Sync upstream/main ($(date +'%Y-%m-%d'))" \
-            --body "Automated sync with upstream/main" \
-            --label sync
+            --body "Automated sync with upstream/main" || true
