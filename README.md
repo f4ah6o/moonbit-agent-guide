@@ -14,7 +14,7 @@ over MoonBit projects.
 
 re-install
 ```
-/plugin marketplace remove f4ah6o/moonbit-agent-guide
+/plugin marketplace remove moonbit-agent-guide
 /plugin marketplace add f4ah6o/moonbit-agent-guide
 ```
 
