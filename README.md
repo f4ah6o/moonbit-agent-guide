@@ -18,6 +18,14 @@ re-install
 /plugin marketplace add f4ah6o/moonbit-agent-guide
 ```
 
+### Codex
+
+```
+$skill-installer install https://github.com/f4ah6o/moonbit-agent-guide
+```
+
+see https://github.com/openai/skills
+
 ### AGENTS.md
 
 Many AI code agents now have adopted the [`AGENTS.md`](https://agents.md)
