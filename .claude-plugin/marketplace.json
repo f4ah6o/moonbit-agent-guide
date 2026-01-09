@@ -44,6 +44,24 @@
         "development"
       ],
       "strict": false
+    },
+    {
+      "name": "pr-and-cleanup",
+      "description": "Create a PR and automatically cleanup the worktree. Keeps local and remote branches intact.",
+      "version": "0.1.0",
+      "source": "./",
+      "category": "development",
+      "author": {
+        "name": "f4ah6o",
+        "url": "https://github.com/f4ah6o/pr-and-cleanup"
+      },
+      "keywords": [
+        "git",
+        "worktree",
+        "development"
+      ],
+      "strict": false
     }
+
   ]
 }
