@@ -27,6 +27,23 @@
         "property-based-testing"
       ],
       "strict": false
+    },
+    {
+      "name": "create-worktree",
+      "description": "Creates a git worktree for parallel feature development. Use after planning to prepare an isolated development environment with all necessary environment files.",
+      "version": "0.1.0",
+      "source": "./",
+      "category": "development",
+      "author": {
+        "name": "f4ah6o",
+        "url": "https://github.com/f4ah6o/create-worktree"
+      },
+      "keywords": [
+        "git",
+        "worktree",
+        "development"
+      ],
+      "strict": false
     }
   ]
 }
