@@ -53,9 +53,13 @@ jobs:
 
       - name: Merge upstream
         if: steps.check_updates.outputs.has_updates == 'true'
-        continue-on-error: true
         run: |
-          git merge upstream/main --no-edit -m "Merge upstream/main into ${GITHUB_REF#refs/heads/}"
+          # Try to merge, if conflicts occur, still create a merge commit with conflict markers
+          git merge upstream/main --no-edit -m "Merge upstream/main into ${GITHUB_REF#refs/heads/}" || {
+            # Merge failed due to conflicts - add all files with conflict markers and commit
+            git add -A
+            git commit -m "Merge upstream/main into ${GITHUB_REF#refs/heads/} (with conflicts)"
+          }
 
       - name: Push PR branch
         if: steps.check_updates.outputs.has_updates == 'true'
