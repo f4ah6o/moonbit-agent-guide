@@ -42,11 +42,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Merge upstream
-        if: steps.check_updates.outputs.has_updates == 'true'
-        run: |
-          git merge upstream/main --no-edit -m "Merge upstream/main into ${GITHUB_REF#refs/heads/}"
-
       - name: Create PR branch
         if: steps.check_updates.outputs.has_updates == 'true'
         run: |
@@ -56,6 +51,19 @@ jobs:
           echo "branch=$BRANCH" >> $GITHUB_OUTPUT
         id: create_branch
 
+      - name: Merge upstream
+        if: steps.check_updates.outputs.has_updates == 'true'
+        continue-on-error: true
+        run: |
+          git merge upstream/main --no-edit -m "Merge upstream/main into ${GITHUB_REF#refs/heads/}"
+
+      - name: Push PR branch
+        if: steps.check_updates.outputs.has_updates == 'true'
+        env:
+          PR_BRANCH: ${{ steps.create_branch.outputs.branch }}
+        run: |
+          git push origin "$PR_BRANCH" --force
+
       - name: Create Pull Request
         if: steps.check_updates.outputs.has_updates == 'true'
         env:
@@ -63,7 +71,7 @@ jobs:
           PR_BRANCH: ${{ steps.create_branch.outputs.branch }}
         run: |
           gh pr create \
-            --base main \
+            --base fork \
             --head "$PR_BRANCH" \
             --title "Sync upstream/main ($(date +'%Y-%m-%d'))" \
             --body "Automated sync with upstream/main" || true
