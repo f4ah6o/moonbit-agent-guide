@@ -116,16 +116,10 @@ my_module
 - `moon build` - Build project
   (`moon run` and `moon build` both support `--target`)
 - `moon check` - Type check without building, use it REGULARLY, it is fast
-<<<<<<< HEAD
-- `moon check --deny-warn` - Strict check for CI (fails on warnings)
-- `moon info` - Type check and generate `mbti` files
-  run it to see if any public interfaces changed.
-=======
   (`moon check` also supports `--target`)
 - `moon info` - Type check and generate `mbti` files.
   Run it to see if any public interfaces changed.
   (`moon info` also supports `--target`.)
->>>>>>> upstream/main
 - `moon check --target all` - Type check for all backends
 - `moon add package` - Add dependency
 - `moon remove package` - Remove dependency
@@ -139,17 +133,10 @@ my_module
 - `moon test -v` - Verbose output with test names
 - `moon test [dirname|filename]` - Test specific directory or file
 - `moon coverage analyze` - Analyze coverage
-<<<<<<< HEAD
-
-### Benchmark Commands
-
-- `moon bench` - Run benchmarks (outputs avg time, std dev, iterations)
-=======
 - `moon test --filter 'globl'` - Run tests matching filter
   ```
   moon test float/float_test.mbt --filter "Float::*"
   ```
->>>>>>> upstream/main
 
 ## `README.mbt.md` Generation Guide
 

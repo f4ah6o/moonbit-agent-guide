@@ -4,53 +4,7 @@ This repository contains an [Agent Skill](https://agentskills.io/home) that teac
 
 ## Integrate the Skill into your agent
 
-<<<<<<< HEAD
-### Claude Code
-
-```
-/plugin marketplace add f4ah6o/moonbit-agent-guide
-```
-
-re-install
-```
-/plugin marketplace remove moonbit-agent-guide
-/plugin marketplace add f4ah6o/moonbit-agent-guide
-```
-
-### Codex
-
-```
-$skill-installer install https://github.com/f4ah6o/moonbit-agent-guide
-```
-
-see https://github.com/openai/skills
-
-### AGENTS.md
-
-Many AI code agents now have adopted the [`AGENTS.md`](https://agents.md)
-convention for providing guidance for agents. For such agents, you may:
-
-- Copy `Agents.mbt.md` into your project directory as `AGENTS.md`
-- Append the content of `Agents.mbt.md` to your existing `AGENTS.md` file.
-
-### Claude Code
-
-[Claude Code](https://www.anthropic.com/claude-code) supports `CLAUDE.md` file.
-Since `CLAUDE.md` supports `@path/to/import` syntax, we suggest copying
-`Agents.mbt.md` into your project directory and mention it in `CLAUDE.md`. For
-example, suppose you copied `Agents.mbt.md` to your project directory as
-`moonbit.mbt.md`, then you can add the following line to your `CLAUDE.md` file:
-
-```markdown
-# MoonBit Language Reference
-- @moonbit.mbt.md
-```
-
-See [Memory Management](https://docs.claude.com/en/docs/claude-code/memory)
-on detailed configuration.
-=======
 Different AI assistants require different configuration methods. Below are guides for popular coding assistants:
->>>>>>> upstream/main
 
 ### Codex CLI
 
