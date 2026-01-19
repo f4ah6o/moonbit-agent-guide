@@ -489,14 +489,9 @@ fn main {
 
 ### Using the Standard Library (moonbitlang/core)
 
-**MoonBit standard library (moonbitlang/core) packages are automatically imported** - DO NOT add them to dependencies:
+**MoonBit standard library (moonbitlang/core) packages were automatically imported**. MoonBit is transitioning to explicit imports—you will see a warning to add imports like `moonbitlang/core/strconv` to `moon.pkg.json` if you use them.
+The module is always available without adding to dependencies.
 
-- ❌ **DO NOT** use `moon add` to add standard library packages like `moonbitlang/core/strconv`
-- ❌ **DO NOT** add standard library packages to `"deps"` field of `moon.mod.json`
-- ❌ **DO NOT** add standard library packages to `"import"` field of `moon.pkg.json`
-- ✅ **DO** use them directly: `@strconv.parse_int()`, `@list.List`, `@array.fold()`, etc.
-
-If you get an error like "cannot import `moonbitlang/core/strconv`", remove it from imports - it's automatically available.
 
 ### Creating Packages
 
