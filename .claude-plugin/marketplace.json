@@ -11,7 +11,7 @@
       "name": "moonbit-agent-guide",
       "description": "Guide for writing, refactoring, and testing MoonBit projects",
       "version": "0.1.0",
-      "source": "./",
+      "source": "moonbit-agent-guide",
       "category": "development",
       "author": {
         "name": "f4ah6o",
@@ -25,6 +25,26 @@
         "refactoring",
         "quickcheck",
         "property-based-testing"
+      ],
+      "strict": false
+    },
+    {
+      "name": "moonbit-refactoring",
+      "description": "Refactor MoonBit code to be idiomatic and preserve behavior while improving APIs, patterns, and tests",
+      "version": "0.1.0",
+      "source": "moonbit-refactoring",
+      "category": "development",
+      "author": {
+        "name": "f4ah6o",
+        "url": "https://github.com/f4ah6o/moonbit-agent-guide"
+      },
+      "keywords": [
+        "moonbit",
+        "moonbitlang",
+        "development",
+        "refactoring",
+        "testing",
+        "api"
       ],
       "strict": false
     },
