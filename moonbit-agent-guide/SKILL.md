@@ -124,7 +124,7 @@ my_module
 - `moon add package` - Add dependency
 - `moon remove package` - Remove dependency
 - `moon fmt` - Format code - should be run periodically - note that the files may be rewritten
-
+Note you can also use `moon -C dir check` to run commands in a specific directory.
 ### Test Commands
 
 - `moon test` - Run all tests
@@ -136,6 +136,7 @@ my_module
 - `moon test [dirname|filename] --filter 'glob'` - Run tests matching filter
   ```
   moon test float/float_test.mbt --filter "Float::*"
+  moon test float -F "Float::*" // shortcut syntax
   ```
 
 ## `README.mbt.md` Generation Guide
