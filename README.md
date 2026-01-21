@@ -1,6 +1,6 @@
 # MoonBit Agent Skill
 
-This repository contains an [Agent Skill](https://agentskills.io/home) that teaches AI coding agents the MoonBit programming language and its toolchain.
+This repository makes it easier to auto-update by turning [moonbitlang/moonbit-agent-guide](https://github.com/moonbitlang/moonbit-agent-guide) into a Claude Code plugin. It incorporates upstream changes from time to time, but this is not automatic.
 
 ## Integrate the Skill into your agent
 
@@ -8,38 +8,18 @@ Different AI assistants require different configuration methods. Below are guide
 
 ### Codex CLI
 
-```shell
-mkdir -p ~/.codex/skills/
-git clone https://github.com/moonbitlang/moonbit-agent-guide ~/.codex/skills/moonbit
-```
+It's just a prompt, not a command, so being casual is fine.
 
-Documentation: https://developers.openai.com/codex/skills
+```codex
+$skill-installer install/update https://github.com/f4ah6o/moonbit-agent-guide
+```
 
 ### Claude Code
 
-```shell
-mkdir -p ~/.claude/skills/
-git clone https://github.com/moonbitlang/moonbit-agent-guide ~/.claude/skills/moonbit
-```
+In Claude Code, after `/plugin`, go to the Marketplaces tab > Add Marketplace and copy and paste "https://github.com/f4ah6o/moonbit-agent-guide.git".
 
-Documentation: https://code.claude.com/docs/en/skills
+After that, you can also set it to Auto Update from the list.
 
-### GitHub Copilot for VS Code
+### antigravity
 
-```shell
-# enable moonbit skill for current repository
-mkdir -p ./.github/skills/
-git clone https://github.com/moonbitlang/moonbit-agent-guide ./.github/skills/moonbit
-```
-
-Note: Agent Skills support in VS Code is currently in preview and available only in [VS Code Insiders](https://code.visualstudio.com/insiders/). Enable the `chat.useAgentSkills` setting to use Agent Skills. See [Use Agent Skills in VS Code](https://code.visualstudio.com/docs/copilot/customization/agent-skills) for details.
-
-### Cursor & Cursor CLI
-
-> Agent Skills are available only in the Cursor nightly release channel.
-
-Documentation: https://cursor.com/cn/docs/context/skills
-
-### Gemini CLI
-
-It seems that Gemini CLI will support agent skills in next release: https://github.com/google-gemini/gemini-cli/issues/15327
+Just `cp` it from either of the above to `.agent/skills`.
