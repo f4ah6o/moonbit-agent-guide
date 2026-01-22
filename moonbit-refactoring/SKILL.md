@@ -94,15 +94,34 @@ Example:
 let n = @parser.parse_number(token)
 ```
 
-### Simplify Constructors When Type Is Known
-- Drop `TypePath::Constr` when the surrounding type is known.
+### Simplify Enum Constructors When Type Is Known
 
-Example:
+When the expected type is known from context, you can omit the full package path for enum constructors:
+
+- **Pattern matching**: Annotate the matched value; constructors need no path.
+- **Nested constructors**: Only the outermost needs the full path.
+- **Return values**: The return type provides context for constructors in the body.
+- **Collections**: Type-annotate the collection; elements inherit the type.
+
+Examples:
 ```mbt
-match tree { // the type of tree is known to be Tree
-  Leaf(x) => x // no need for Tree::Leaf
+// Pattern matching - annotate the value being matched
+let tree : @pkga.Tree = ...
+match tree {
+  Leaf(x) => x
   Node(left~, x, right~) => left.sum() + x + right.sum()
 }
+
+// Nested constructors - only outer needs full path
+let x = @pkga.Tree::Node(left=Leaf(1), x=2, right=Leaf(3))
+
+// Return type provides context
+fn make_tree() -> @pkga.Tree {
+  Node(left=Leaf(1), x=2, right=Leaf(3))
+}
+
+// Collections - type annotation on the array
+let trees : Array[@pkga.Tree] = [Leaf(1), Node(left=Leaf(2), x=3, right=Leaf(4))]
 ```
 
 ### Pattern Matching and Views

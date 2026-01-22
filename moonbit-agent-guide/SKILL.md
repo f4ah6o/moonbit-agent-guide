@@ -335,14 +335,34 @@ pub fn String::rev_find(String, StringView) -> Int?
 
 **Best practice**: When implementing a feature, start with `moon doc` queries to discover available APIs before writing code. This is faster and more accurate than searching through files.
 
-## `moon ide [peek-def|outline|find-references]` for code navigation and refactoring
+## `moon ide [peek-def|outline|find-references|hover]` for code navigation and refactoring
 
 For project-local symbols and navigation, use:
 - `moon ide outline .` to scan a package,
 - `moon ide find-references <symbol>` to locate usages, and
 - `moon ide peek-def` for inline definition context and to locate toplevel symbols.
-
+- `moon ide hover sym -loc filename:line:col` to get type information at a specific location.
 These tools save tokens and are more precise than grepping (`grep` displays results in both definitions and call sites including comments too).
+### `moon ide hover sym -loc filename:line:col` example
+
+When the user asks: "What is the signature and docstring of `filter`? at line 14 of hover.mbt"
+
+```
+$ moon ide hover  filter -loc hover.mbt:14
+test {
+  let a: Array[Int] = [1]
+  inspect(a.filter((x) => {x > 1}))
+            ^^^^^^
+            ```moonbit
+            fn[T] Array::filter(self : Array[T], f : (T) -> Bool raise?) -> Array[T] raise?
+            ```
+            ---
+            
+             Creates a new array containing all elements from the input array that satisfy
+             ... omitted ...
+}
+```
+
 
 ### `moon ide peek-def sym [-loc filename:line:col]` example
 
@@ -711,9 +731,9 @@ test "string indexing and utf8 encode/decode" {
   let eq_char : Char = '='
   // s[0] == eq_char // ❌ Won't compile - eq_char is not a literal, lhs is UInt while rhs is Char
   // Use: s[0] == '=' or s.get_char(0) == Some(eq_char)
-  let bytes = @encoding/utf8.encode("中文") // utf8 encode package is in stdlib
+  let bytes = @utf8.encode("中文") // utf8 encode package is in stdlib
   assert_true(bytes is [0xe4, 0xb8, 0xad, 0xe6, 0x96, 0x87])
-  let s2 : String = @encoding/utf8.decode(bytes) // decode utf8 bytes back to String
+  let s2 : String = @utf8.decode(bytes) // decode utf8 bytes back to String
   assert_true(s2 is "中文")
   for c in "中文" {
     let _ : Char = c // unicode safe iteration
