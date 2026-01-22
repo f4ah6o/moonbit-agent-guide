@@ -1,7 +1,9 @@
 {
   "name": "moonbit-agent-guide",
-  "version": "2026.1.0",
-  "description": "MoonBit development guide for AI agents / fork for claude plugin",
+  "metadata": {
+    "version": "2026.1.0",
+    "description": "MoonBit development guide for AI agents / fork for claude plugin"
+  },
   "owner": {
     "name": "f4ah6o",
     "url": "https://github.com/f4ah6o/moonbit-agent-guide"
@@ -11,7 +13,7 @@
       "name": "moonbit-agent-guide",
       "description": "Guide for writing, refactoring, and testing MoonBit projects",
       "version": "2026.1.0",
-      "source": "moonbit-agent-guide",
+      "source": "./moonbit-agent-guide",
       "category": "development",
       "author": {
         "name": "f4ah6o",
@@ -32,7 +34,7 @@
       "name": "moonbit-refactoring",
       "description": "Refactor MoonBit code to be idiomatic and preserve behavior while improving APIs, patterns, and tests",
       "version": "2026.1.0",
-      "source": "moonbit-refactoring",
+      "source": "./moonbit-refactoring",
       "category": "development",
       "author": {
         "name": "f4ah6o",
@@ -86,7 +88,7 @@
       "name": "pbt-workflow-guide",
       "description": "Root workflow for introducing, updating, maintaining, and improving Property-Based Testing in MoonBit repositories using moonbitlang/quickcheck",
       "version": "2026.1.0",
-      "source": "pbt-workflow-guide",
+      "source": "./pbt-workflow-guide",
       "category": "development",
       "author": {
         "name": "f4ah6o",
