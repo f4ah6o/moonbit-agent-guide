@@ -4,7 +4,7 @@
   "description": "MoonBit development guide for AI agents / fork for claude plugin",
   "owner": {
     "name": "f4ah6o",
-    "url": "https://github.com/f4ah6o"
+    "url": "https://github.com/f4ah6o/moonbit-agent-guide"
   },
   "plugins": [
     {
@@ -14,7 +14,7 @@
       "source": "moonbit-agent-guide",
       "category": "development",
       "author": {
-        "name": "moonbitlang",
+        "name": "f4ah6o",
         "url": "https://github.com/f4ah6o/moonbit-agent-guide"
       },
       "keywords": [
@@ -35,7 +35,7 @@
       "source": "moonbit-refactoring",
       "category": "development",
       "author": {
-        "name": "moonbitlang",
+        "name": "f4ah6o",
         "url": "https://github.com/f4ah6o/moonbit-agent-guide"
       },
       "keywords": [
