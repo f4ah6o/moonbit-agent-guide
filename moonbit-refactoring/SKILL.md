@@ -130,7 +130,23 @@ let trees : Array[@pkga.Tree] = [Leaf(1), Node(left=Leaf(2), x=3, right=Leaf(4))
 - Pattern match strings directly; avoid converting to `Array[Char]`.
 - `String`/`StringView` indexing yields `UInt16` code units. Use `for ch in s` for Unicode-aware iteration.
 
-Examples:
+#### we prefer pattern matching over small functions
+
+For example,
+```mbt
+ match gen_results.get(0) {
+   Some(value) => Iter::singleton(value)
+   None => Iter::empty()
+ }
+```
+We can pattern match directly, it is more efficient and as readable:
+```mbt
+ match gen_results {
+   [value, ..] => Iter::singleton(value)
+   [] => Iter::empty()
+ }
+```
+MoonBit pattern matching is pretty expressive, here are some more examples:
 ```mbt
 match items {
   [] => ()
