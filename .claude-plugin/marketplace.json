@@ -51,40 +51,6 @@
       "strict": false
     },
     {
-      "name": "create-worktree",
-      "description": "Creates a git worktree for parallel feature development. Use after planning to prepare an isolated development environment with all necessary environment files.",
-      "version": "2026.1.0",
-      "source": "./",
-      "category": "development",
-      "author": {
-        "name": "f4ah6o",
-        "url": "https://github.com/f4ah6o/create-worktree"
-      },
-      "keywords": [
-        "git",
-        "worktree",
-        "development"
-      ],
-      "strict": false
-    },
-    {
-      "name": "pr-and-cleanup",
-      "description": "Create a PR and automatically cleanup the worktree. Keeps local and remote branches intact.",
-      "version": "2026.1.0",
-      "source": "./",
-      "category": "development",
-      "author": {
-        "name": "f4ah6o",
-        "url": "https://github.com/f4ah6o/pr-and-cleanup"
-      },
-      "keywords": [
-        "git",
-        "worktree",
-        "development"
-      ],
-      "strict": false
-    },
-    {
       "name": "pbt-workflow-guide",
       "description": "Root workflow for introducing, updating, maintaining, and improving Property-Based Testing in MoonBit repositories using moonbitlang/quickcheck",
       "version": "2026.1.0",
