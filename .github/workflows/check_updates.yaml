@@ -1,0 +1,34 @@
+name: Check Skill Updates
+
+on:
+  schedule:
+    - cron: '0 0 * * 1' # Run weekly on Monday
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  check-updates:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Check for updates
+        id: check
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: ./scripts/check_updates.sh
+
+      - name: Create Pull Request
+        if: env.UPDATE_FOUND == 'true'
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "chore(deps): update skills versions"
+          title: "chore(deps): update skills versions"
+          body: |
+            This PR updates the skill versions in `.claude-plugin/marketplace.json` based on the latest upstream commits.
+            
+            Please verify the changes and manually update the skill files if necessary.
+          branch: update-skills-versions
