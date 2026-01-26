@@ -1,12 +1,12 @@
 {
-  "name": "moonbit-agent-guide",
+  "name": "skills-bonsai",
   "metadata": {
-    "version": "2026.1.0",
-    "description": "MoonBit development guide for AI agents / fork for claude plugin"
+    "version": "2026.1.1",
+    "description": "A curation repository of skills(MoonBit, PBT, git-wt)"
   },
   "owner": {
     "name": "f4ah6o",
-    "url": "https://github.com/f4ah6o/moonbit-agent-guide"
+    "url": "https://github.com/f4ah6o/skills-bonsai"
   },
   "plugins": [
     {
@@ -58,7 +58,7 @@
       "category": "development",
       "author": {
         "name": "f4ah6o",
-        "url": "https://github.com/f4ah6o/moonbit-agent-guide"
+        "url": "https://github.com/f4ah6o/skills-bonsai"
       },
       "keywords": [
         "moonbit",
@@ -77,7 +77,7 @@
       "category": "development",
       "author": {
         "name": "f4ah6o",
-        "url": "https://github.com/f4ah6o/moonbit-agent-guide"
+        "url": "https://github.com/f4ah6o/skills-bonsai"
       },
       "keywords": [
         "git",
