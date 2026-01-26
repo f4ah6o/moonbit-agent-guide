@@ -34,7 +34,7 @@
       "name": "moonbit-refactoring",
       "description": "Refactor MoonBit code to be idiomatic and preserve behavior while improving APIs, patterns, and tests",
       "version": "2026.1.0",
-      "source": "./",
+      "source": "./moonbit-refactoring",
       "category": "development",
       "author": {
         "name": "moonbitlang",
@@ -74,6 +74,22 @@
       "description": "Guide for using git-wt to manage isolated git worktrees. Use this for all code modification tasks to ensure a clean, safe, and disposable environment.",
       "version": "2026.1.0",
       "source": "./git-wt",
+      "category": "development",
+      "author": {
+        "name": "f4ah6o",
+        "url": "https://github.com/f4ah6o/skills-bonsai"
+      },
+      "keywords": [
+        "git",
+        "git-wt"
+      ],
+      "strict": false
+    },
+    {
+      "name": "skill-check-skill",
+      "description": "",
+      "version": "2026.1.0",
+      "source": "./skill-check-skill",
       "category": "development",
       "author": {
         "name": "f4ah6o",
