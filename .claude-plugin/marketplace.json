@@ -14,13 +14,11 @@
       "description": "Guide for writing, refactoring, and testing MoonBit projects",
       "version": "2026.1.1",
       "source": "./moonbit-agent-guide",
-      "category": "development",
+      "category": "{\"primary\": \"development\", \"tracking\": {\"sha\": \"1117ae77541b08d39d71aa6115fc53b865834d45\", \"date\": \"2026-01-24T08:41:22Z\"}}",
       "author": {
         "name": "moonbitlang",
         "url": "https://github.com/moonbitlang/moonbit-agent-guide"
       },
-      "x-installed-sha": "1117ae77541b08d39d71aa6115fc53b865834d45",
-      "x-installed-date": "2026-01-24T08:41:22Z",
       "keywords": [
         "moonbit",
         "moonbitlang",
@@ -37,13 +35,11 @@
       "description": "Refactor MoonBit code to be idiomatic and preserve behavior while improving APIs, patterns, and tests",
       "version": "2026.1.1",
       "source": "./moonbit-refactoring",
-      "category": "development",
+      "category": "{\"primary\": \"development\", \"tracking\": {\"sha\": \"1117ae77541b08d39d71aa6115fc53b865834d45\", \"date\": \"2026-01-24T08:41:22Z\"}}",
       "author": {
         "name": "moonbitlang",
         "url": "https://github.com/moonbitlang/moonbit-agent-guide"
       },
-      "x-installed-sha": "1117ae77541b08d39d71aa6115fc53b865834d45",
-      "x-installed-date": "2026-01-24T08:41:22Z",
       "keywords": [
         "moonbit",
         "moonbitlang",
@@ -57,15 +53,13 @@
     {
       "name": "pbt-workflow-guide",
       "description": "Root workflow for introducing, updating, maintaining, and improving Property-Based Testing in MoonBit repositories using moonbitlang/quickcheck",
-      "version": "2026.1.1",
+      "version": "2026.1.2",
       "source": "./pbt-workflow-guide",
-      "category": "development",
+      "category": "{\"primary\":\"development\",\"tracking\":{\"sha\":\"985919c066e147f518d52e0d2a5a323b809cac7a\",\"date\":\"2026-01-26T02:17:04Z\"}}",
       "author": {
         "name": "f4ah6o",
         "url": "https://github.com/f4ah6o/skills-bonsai"
       },
-      "x-installed-sha": "c09494c90943ae7246c751cc4558f53edd47150e",
-      "x-installed-date": "2026-01-26T00:48:44Z",
       "keywords": [
         "moonbit",
         "property-based-testing",
@@ -78,15 +72,13 @@
     {
       "name": "git-wt",
       "description": "Guide for using git-wt to manage isolated git worktrees. Use this for all code modification tasks to ensure a clean, safe, and disposable environment.",
-      "version": "2026.1.1",
+      "version": "2026.1.2",
       "source": "./git-wt",
-      "category": "development",
+      "category": "{\"primary\":\"development\",\"tracking\":{\"sha\":\"985919c066e147f518d52e0d2a5a323b809cac7a\",\"date\":\"2026-01-26T02:17:04Z\"}}",
       "author": {
         "name": "f4ah6o",
         "url": "https://github.com/f4ah6o/skills-bonsai"
       },
-      "x-installed-sha": "c09494c90943ae7246c751cc4558f53edd47150e",
-      "x-installed-date": "2026-01-26T00:48:44Z",
       "keywords": [
         "git",
         "git-wt"
@@ -96,15 +88,13 @@
     {
       "name": "skill-check-skill",
       "description": "An essential security guardrail for Agent Skills. This tool scans GitHub repositories to identify malicious code, destructive commands, and data exfiltration patterns. Unlike simple checkers, it recursively analyzes referenced scripts to find threats hidden behind the main skill file. Use this skill immediately before adding any new skill or tool to verify its safety and prevent accidental system compromise.",
-      "version": "2026.1.1",
+      "version": "2026.1.2",
       "source": "./skill-check-skill",
-      "category": "development",
+      "category": "{\"primary\":\"development\",\"tracking\":{\"sha\":\"6386acff78cccd6aaf06de99513553189db0e2ff\",\"date\":\"2026-01-24T03:33:21Z\"}}",
       "author": {
-        "name": "f4ah6o",
-        "url": "https://github.com/f4ah6o/skills-bonsai"
+        "name": "nyanko3141592",
+        "url": "https://github.com/nyanko3141592/skill-check-skill"
       },
-      "x-installed-sha": "c09494c90943ae7246c751cc4558f53edd47150e",
-      "x-installed-date": "2026-01-26T00:48:44Z",
       "keywords": [
         "git",
         "git-wt"
