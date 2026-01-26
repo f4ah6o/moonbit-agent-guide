@@ -68,6 +68,22 @@
         "testing"
       ],
       "strict": false
+    },
+    {
+      "name": "git-wt",
+      "description": "Guide for using git-wt to manage isolated git worktrees. Use this for all code modification tasks to ensure a clean, safe, and disposable environment.",
+      "version": "2026.1.0",
+      "source": "./skills/git-wt",
+      "category": "development",
+      "author": {
+        "name": "f4ah6o",
+        "url": "https://github.com/f4ah6o/moonbit-agent-guide"
+      },
+      "keywords": [
+        "git",
+        "git-wt"
+      ],
+      "strict": false
     }
   ]
 }
