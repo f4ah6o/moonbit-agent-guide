@@ -12,13 +12,15 @@
     {
       "name": "moonbit-agent-guide",
       "description": "Guide for writing, refactoring, and testing MoonBit projects",
-      "version": "2026.1.0",
+      "version": "2026.1.1",
       "source": "./moonbit-agent-guide",
       "category": "development",
       "author": {
         "name": "moonbitlang",
         "url": "https://github.com/moonbitlang/moonbit-agent-guide"
       },
+      "x-installed-sha": "1117ae77541b08d39d71aa6115fc53b865834d45",
+      "x-installed-date": "2026-01-24T08:41:22Z",
       "keywords": [
         "moonbit",
         "moonbitlang",
@@ -33,13 +35,15 @@
     {
       "name": "moonbit-refactoring",
       "description": "Refactor MoonBit code to be idiomatic and preserve behavior while improving APIs, patterns, and tests",
-      "version": "2026.1.0",
+      "version": "2026.1.1",
       "source": "./moonbit-refactoring",
       "category": "development",
       "author": {
         "name": "moonbitlang",
         "url": "https://github.com/moonbitlang/moonbit-agent-guide"
       },
+      "x-installed-sha": "1117ae77541b08d39d71aa6115fc53b865834d45",
+      "x-installed-date": "2026-01-24T08:41:22Z",
       "keywords": [
         "moonbit",
         "moonbitlang",
@@ -53,13 +57,15 @@
     {
       "name": "pbt-workflow-guide",
       "description": "Root workflow for introducing, updating, maintaining, and improving Property-Based Testing in MoonBit repositories using moonbitlang/quickcheck",
-      "version": "2026.1.0",
+      "version": "2026.1.1",
       "source": "./pbt-workflow-guide",
       "category": "development",
       "author": {
         "name": "f4ah6o",
         "url": "https://github.com/f4ah6o/skills-bonsai"
       },
+      "x-installed-sha": "c09494c90943ae7246c751cc4558f53edd47150e",
+      "x-installed-date": "2026-01-26T00:48:44Z",
       "keywords": [
         "moonbit",
         "property-based-testing",
@@ -72,13 +78,15 @@
     {
       "name": "git-wt",
       "description": "Guide for using git-wt to manage isolated git worktrees. Use this for all code modification tasks to ensure a clean, safe, and disposable environment.",
-      "version": "2026.1.0",
+      "version": "2026.1.1",
       "source": "./git-wt",
       "category": "development",
       "author": {
         "name": "f4ah6o",
         "url": "https://github.com/f4ah6o/skills-bonsai"
       },
+      "x-installed-sha": "c09494c90943ae7246c751cc4558f53edd47150e",
+      "x-installed-date": "2026-01-26T00:48:44Z",
       "keywords": [
         "git",
         "git-wt"
@@ -88,13 +96,15 @@
     {
       "name": "skill-check-skill",
       "description": "An essential security guardrail for Agent Skills. This tool scans GitHub repositories to identify malicious code, destructive commands, and data exfiltration patterns. Unlike simple checkers, it recursively analyzes referenced scripts to find threats hidden behind the main skill file. Use this skill immediately before adding any new skill or tool to verify its safety and prevent accidental system compromise.",
-      "version": "2026.1.0",
+      "version": "2026.1.1",
       "source": "./skill-check-skill",
       "category": "development",
       "author": {
         "name": "f4ah6o",
         "url": "https://github.com/f4ah6o/skills-bonsai"
       },
+      "x-installed-sha": "c09494c90943ae7246c751cc4558f53edd47150e",
+      "x-installed-date": "2026-01-26T00:48:44Z",
       "keywords": [
         "git",
         "git-wt"
