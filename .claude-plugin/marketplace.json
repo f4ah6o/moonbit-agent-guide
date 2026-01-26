@@ -16,8 +16,8 @@
       "source": "./moonbit-agent-guide",
       "category": "development",
       "author": {
-        "name": "f4ah6o",
-        "url": "https://github.com/f4ah6o/moonbit-agent-guide"
+        "name": "moonbitlang",
+        "url": "https://github.com/moonbitlang/moonbit-agent-guide"
       },
       "keywords": [
         "moonbit",
@@ -34,11 +34,11 @@
       "name": "moonbit-refactoring",
       "description": "Refactor MoonBit code to be idiomatic and preserve behavior while improving APIs, patterns, and tests",
       "version": "2026.1.0",
-      "source": "./moonbit-refactoring",
+      "source": "./",
       "category": "development",
       "author": {
-        "name": "f4ah6o",
-        "url": "https://github.com/f4ah6o/moonbit-agent-guide"
+        "name": "moonbitlang",
+        "url": "https://github.com/moonbitlang/moonbit-agent-guide"
       },
       "keywords": [
         "moonbit",
