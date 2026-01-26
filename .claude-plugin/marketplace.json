@@ -73,7 +73,7 @@
       "name": "git-wt",
       "description": "Guide for using git-wt to manage isolated git worktrees. Use this for all code modification tasks to ensure a clean, safe, and disposable environment.",
       "version": "2026.1.0",
-      "source": "./skills/git-wt",
+      "source": "./git-wt",
       "category": "development",
       "author": {
         "name": "f4ah6o",
