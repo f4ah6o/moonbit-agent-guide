@@ -87,7 +87,7 @@
     },
     {
       "name": "skill-check-skill",
-      "description": "",
+      "description": "An essential security guardrail for Agent Skills. This tool scans GitHub repositories to identify malicious code, destructive commands, and data exfiltration patterns. Unlike simple checkers, it recursively analyzes referenced scripts to find threats hidden behind the main skill file. Use this skill immediately before adding any new skill or tool to verify its safety and prevent accidental system compromise.",
       "version": "2026.1.0",
       "source": "./skill-check-skill",
       "category": "development",
