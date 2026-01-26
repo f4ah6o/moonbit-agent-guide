@@ -33,8 +33,8 @@
     {
       "name": "moonbit-refactoring",
       "description": "Refactor MoonBit code to be idiomatic and preserve behavior while improving APIs, patterns, and tests",
-      "version": "2026.1.1",
-      "source": "./moonbit-refactoring",
+      "version": "2026.1.2",
+      "source": "./",
       "category": "{\"primary\": \"development\", \"tracking\": {\"sha\": \"1117ae77541b08d39d71aa6115fc53b865834d45\", \"date\": \"2026-01-24T08:41:22Z\"}}",
       "author": {
         "name": "moonbitlang",
